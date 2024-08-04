@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    color: wheat;
+    font-size: 50px;
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(0, 0, 0);
+    color: wheat;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+#notesContainer {
+    margin-top: 20px;
+}
+
+.note {
+    background-color: gray;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+a {
+    display: block;
+    color: white;
+    text-align:left;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+a:hover {
+    background-color: #575757; /* Darker shade on hover */
+}
+
+/* css from chatgpt */
+
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: wheat;
+    font-size: 50px;
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    text-align: center;
+}
+
+header:hover{
+    color: yellowgreen;
+}
+
+.container {
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: black;
+    background-color: #696969;
+}
+
+textarea:hover{
+    border: 3px solid greenyellow;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 0, 255)); /* Sizzling gradient background */
+    color: white;
+    border: 2px solid rgb(255, 0, 255); /* Border color matching one of the gradient colors */
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s, border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow for uplift effect */
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 0, 255, 0.4), transparent);
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+button:hover {
+    background: linear-gradient(45deg, rgb(0, 255, 255), rgb(255, 255, 0)); /* Change gradient on hover */
+    border-color: rgb(255, 255, 0); /* Match border color to one of the new gradient colors */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow to enhance uplift effect */
+    transform: translateY(-5px); /* Move the button up */
+}
+
+button:hover:before {
+    opacity: 1; /* Show sizzling light effect on hover */
+}
+
+
+
+#notesContainer {
+    margin-top: 20px;
+}
+
+.note {
+    background-color: gray;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.hidden:hover{
+    color: rgb(0, 255, 255);
+}
+
+
